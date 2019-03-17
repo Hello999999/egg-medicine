@@ -1,0 +1,34 @@
+{
+  "name": "medicine",
+  "version": "1.0.0",
+  "description": "medicine",
+  "private": true,
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --port=80 --daemon --title=egg-server-medicine",
+    "stop": "egg-scripts stop --title=egg-server-medicine",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wittyMouse/egg-medicine"
+  },
+  "keywords": [],
+  "author": "wittyMouse",
+  "license": "ISC",
+  "dependencies": {
+    "egg": "^2.19.0",
+    "egg-mysql": "^3.0.0",
+    "egg-scripts": "^2.11.0"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.11.0",
+    "egg-mock": "^3.21.0"
+  }
+}
